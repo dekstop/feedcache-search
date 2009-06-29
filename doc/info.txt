@@ -1,0 +1,19 @@
+2009-04-12, 17:16:11
+
+to deploy:
+- copy solr.war to webapps of servlet container
+- set java system property solr.solr.home to your solr project location (that contains conf/data/... folders)
+- start/restart servlet container
+
+to search:
+- http://127.0.0.1:8080/solr/admin/form.jsp
+- e.g. http://127.0.0.1:8080/solr/select?indent=on&version=2.2&q=Radiohead&start=0&rows=10&fl=*%2Cscore&qt=standard&wt=standard&explainOther=&hl.fl=
+
+"Alva Noto", "Atom™", "Dennis Wilson", "Prefuse 73", "Illa J", "Lukid", "Ras G", "Dimlite", "Kenny Larkin", "Bullion", "Roll Deep", "dekstop", "10-20", "Hudson Mohawke", "D Double E", "Uusitalo", "Zomby", "Radiohead", "Herrmutt Lobby", "2562", "Doctor", "Studio Pankow", "Madlib", "Shed", "The Natural Yogurt Band", "Pole", "Enemy Earth", "The Conet Project", "Harmonic 313", "The Chess Cadet Allstars", "Kit Clayton", "Doug Carn", "Jimi Tenor & Kabu Kabu", "Donato Wharton", "Georgia Anne Muldrow & Dudley Perkins", "Flying Lotus", "Shawn Lee's Ping Pong Orchestra", "Fat Jon the Ample Soul Physician", "Blackmonk & Ras G", "Mount Kimbie", "Durrty Goodz", "00Genesis", "Basic Channel", "Redshape", "Marko Fürstenberg", "Nick Luscombe", "Large Professor", "Gas", "Deela", "Nine Horses", "J Dilla", "Benga", "Disrupt", "Heralds of Change", "Kanye West", "Savath & Savalas", "Atom Tm", "Shackleton", "Mr. Lif", "Timeblind", "Nosaj Thing", "Wolfgang Voigt", "Todd Terry", "Rae & Christian", "Nitrada", "Lil' Dave", "Platinum Pied Pipers", "Byetone", "Joker", "Ben Folds Five", "Young Black Preachers", "Q-Tip", "Digitalis", "DKS", "Pan Sonic", "YMCK", "Omar-S", "Rob Booth", "SND", "Appleblim", "Deichkind", "Kirby Ditko", "Martyn", "Trackademicks", "Lukas Nystrand as Glenny 417", "Kutiman", "Shank", "Clifford Kealoha", "Lukas Nystrand", "Carpenters", "Eliot Lipp", "Zo!", "Accrual", "Jon Brion", "Roadside Gs", "Ramadanman", "Onra", "Spec Boogie", "FLYamSAM", "fuzzpedal", "Bilal", "Michael Mayer", "Tujiko Noriko & Lawrence English & John Chantler"
+
+to delete index:
+- 
+
+config:
+- jetty log dir via "-Djetty.logs=..." in run.sh
+- solr data dir via "<dataDir>...</dataDir>" in solr/conf/solrconfig.xml 
