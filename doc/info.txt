@@ -20,3 +20,8 @@ to delete index:
 config:
 - jetty log dir via "-Djetty.logs=..." in run.sh
 - solr data dir via "<dataDir>...</dataDir>" in solr/conf/solrconfig.xml 
+
+
+todo:
+- don't stem words for artist search! -> change all "text"/"text_striphtml" fields
+- 
