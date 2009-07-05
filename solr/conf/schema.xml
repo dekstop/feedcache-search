@@ -127,9 +127,10 @@
        best performance.
     -->
 
-    <field name="id" type="integer" indexed="true" stored="true" required="true" /> 
+    <field name="id" type="integer" indexed="true" stored="true" required="true" />
     
-    <field name="feed_id" type="integer" indexed="true" stored="true" required="true" /> 
+    <field name="feed_id" type="integer" indexed="true" stored="true" required="true" />
+    <field name="feed_id_facet" type="integer" indexed="true" stored="true" required="true" />
     <field name="feed_title" type="text" indexed="true" stored="false" required="true"/>
     <field name="feed_description" type="text" indexed="true" stored="false" required="false"/>
     <field name="feed_link" type="url" indexed="true" stored="false" required="false"/>
