@@ -143,13 +143,15 @@
     <field name="summary" type="text" indexed="true" stored="false" required="false"/>
     <field name="link" type="url" indexed="true" stored="false" required="false"/>
     
-    <field name="author" type="text" indexed="true" stored="false" required="false" multiValued="true"/>
+    <field name="author" type="text" indexed="true" stored="true" required="false" multiValued="true"/>
+    <field name="author_facet" type="string_lower" indexed="true" stored="false" required="false" multiValued="true"/>
     
-    <field name="category" type="text" indexed="true" stored="false" required="false" multiValued="true"/>
+    <field name="category" type="text" indexed="true" stored="true" required="false" multiValued="true"/>
+    <field name="category_facet" type="string_lower" indexed="true" stored="false" required="false" multiValued="true"/>
     <field name="category_scheme" type="string_lower" indexed="true" stored="false" required="false" multiValued="true"/>
     
-    <field name="enclosure_url" type="url" indexed="true" stored="false" required="false" multiValued="true"/>
-    <field name="enclosure_mimetype" type="string_lower" indexed="true" stored="false" required="false" multiValued="true"/>
+    <field name="enclosure_url" type="url" indexed="true" stored="true" required="false" multiValued="true"/>
+    <field name="enclosure_mimetype" type="string_lower" indexed="true" stored="true" required="false" multiValued="true"/>
     
     <!-- catchall field, containing all other searchable text fields (implemented
         via copyField further on in this schema  -->
