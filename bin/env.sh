@@ -11,3 +11,5 @@ export SOLR_HOME=${APP_HOME}/solr
 
 export DATADIR=${APP_HOME}/data
 export LOGDIR=${APP_HOME}/log
+
+export JAVA=java

@@ -6,5 +6,5 @@ bin=`cd $bin; pwd`
 . ${bin}/env.sh
 
 pushd ${APP_HOME}/jetty
-java -Djetty.logs=${LOGDIR} -Dsolr.solr.home=${SOLR_HOME} -jar start.jar
+$JAVA -Djetty.logs=${LOGDIR} -Dsolr.solr.home=${SOLR_HOME} -jar start.jar
 popd
